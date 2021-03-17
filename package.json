@@ -10,6 +10,6 @@
     "phaser": "^3.53.1"
   },
   "scripts": {
-    "start": "http-server .",
+    "start": "http-server ."
   }
 }
