@@ -6,6 +6,10 @@
   "author": "people",
   "license": "MIT",
   "dependencies": {
+    "http-server": "^0.12.3",
     "phaser": "^3.53.1"
+  },
+  "scripts": {
+    "start": "http-server .",
   }
 }
