@@ -8,9 +8,22 @@
         body {
             margin: 0;
         }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #wrapper {
+            min-height: 100%; 
+        }
     </style>
 </head>
-<body>
+<body id='wrapper'>
+    
+    <!-- <div id="wrapper">some content</div> -->
+    
+    
 
 <script type="text/javascript">
 
@@ -18,6 +31,13 @@ var config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
+    // scale: {
+    //     //https://photonstorm.github.io/phaser3-docs/Phaser.Scale.ScaleManager.html
+    //     parent: 'wrapper',
+    //     mode: Phaser.Scale.FIT,
+    //     width: 800,
+    //     height: 600
+    // },
     physics: {
         default: 'arcade',
         arcade: {
