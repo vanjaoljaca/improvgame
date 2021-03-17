@@ -1,9 +1,9 @@
-<!doctype html> 
-<html lang="en"> 
-<head> 
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
     <title>Making your first Phaser 3 Game - Part 10</title>
-    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.53.1/dist/phaser.js"></script>
     <style type="text/css">
         body {
             margin: 0;
@@ -15,29 +15,29 @@
         }
 
         #wrapper {
-            min-height: 100%; 
+            min-height: 100%;
         }
     </style>
 </head>
 <body id='wrapper'>
-    
+
     <!-- <div id="wrapper">some content</div> -->
-    
-    
+
+
 
 <script type="text/javascript">
 
 var config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    // scale: {
-    //     //https://photonstorm.github.io/phaser3-docs/Phaser.Scale.ScaleManager.html
-    //     parent: 'wrapper',
-    //     mode: Phaser.Scale.FIT,
-    //     width: 800,
-    //     height: 600
-    // },
+    // width: 800,
+    // height: 600,
+    scale: {
+        //https://photonstorm.github.io/phaser3-docs/Phaser.Scale.ScaleManager.html
+        parent: 'wrapper',
+        mode: Phaser.Scale.FIT,
+        width: 800,
+        height: 600
+     },
     physics: {
         default: 'arcade',
         arcade: {
