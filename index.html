@@ -48,9 +48,20 @@ var config = {
     scene: {
         preload: preload,
         create: create,
-        update: update
+        update: update,
+        render: render
     }
 };
+
+function render() {
+    game.debug.pointer(game.input.mousePointer);
+game.debug.pointer(game.input.pointer1);
+game.debug.pointer(game.input.pointer2);
+game.debug.pointer(game.input.pointer3);
+game.debug.pointer(game.input.pointer4);
+game.debug.pointer(game.input.pointer5);
+game.debug.pointer(game.input.pointer6);
+}
 
 var player;
 var stars;
@@ -74,6 +85,12 @@ function preload ()
 
 function create ()
 {
+
+    game.input.addPointer();
+    game.input.addPointer();
+    game.input.addPointer();
+    game.input.addPointer();
+
     //  A simple background for our game
     this.add.image(400, 300, 'sky');
 
@@ -119,6 +136,7 @@ function create ()
 
     //  Input Events
     cursors = this.input.keyboard.createCursorKeys();
+    
 
     //  Some stars to collect, 12 in total, evenly spaced 70 pixels apart along the x axis
     stars = this.physics.add.group({
